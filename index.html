@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  background:radial-gradient(rgb(11, 135, 207),rgb(88, 139, 88)) ;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  border-radius:10px ;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  
+}
+.div-1 ,.div-2 {
+  width: 90%;
+  max-width: 200px;
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.div-1 div ,.div-2 div{
+    padding: 10px;
+    background-color: #007bff;
+    font-size: 24px;
+    color: #333;
+    max-width: fit-content;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+h1{
+    color: #7e2121;
+    font-size: 3rem;
+    
+}
+
+
+</style>
+<body>
+    <h1>GRAD N DROP</h1>
+    <div class="container">
+        <div class="div-1">
+            <div class="childs" draggable="true">item 1</div>
+            <div class="childs" draggable="true">item 2</div>
+            <div class="childs" draggable="true">item 3</div>
+            <div class="childs" draggable="true">item 4</div>
+        </div>
+        <div class="div-2"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
